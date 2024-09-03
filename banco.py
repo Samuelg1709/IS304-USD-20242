@@ -28,3 +28,21 @@ class  CuentaBancaria:
 
         def set_saldo(self, saldo):
             self.__saldo= saldo
+
+def consignar(self, monto):
+    if monto > 0:
+        self.__saldo += monto
+        print(f"consignacion exitosa Su saldo actual es : {self.__saldo} ")
+    else:
+        print("el monto debe ser positivo")
+
+def retirar(self,monto):
+    if  0 < monto <= self.__saldo:
+        print(f"Retiro exitoso. Su saldo actual es : {self.__saldo}")
+    else: print("monto no permitido")
+
+def aperturaCuenta(self, saldoInicial):
+    if saldoInicial >= 100000:
+        self.__saldo = saldoInicial
+        print(f"creacion de la cuenta exitosa")
+    else: print(f"el monto minimo para crear su cuenta es de 100000 pesos.")    
